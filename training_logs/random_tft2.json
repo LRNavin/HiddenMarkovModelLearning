@@ -299,14 +299,6 @@
 			"round": "39",
 			"agent1": "Apples,Yoghurt,Fresh fruit,Walnuts",
 			"agent2": "Strawberry,Yoghurt,Almonds,Chocolate"
-		},
-		{
-			"round": "40",
-			"agent1": "Strawberry,Water,Almonds,Almonds"
-		},
-		{
-			"round": "41",
-			"accept": "agent1"
 		}
 	]
 }

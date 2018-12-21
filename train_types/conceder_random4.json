@@ -1,0 +1,19 @@
+[
+  {
+    "round": 0, 
+    "agent1": "unfortunate", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 1, 
+    "agent1": "concession", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 2, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  "", 
+  ""
+]
