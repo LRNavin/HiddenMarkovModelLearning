@@ -1,49 +1,49 @@
 [
   {
-    "round": 0, 
-    "agent1": "concession", 
+    "round": 0,
+    "agent1": "concession",
     "agent2": "concession"
-  }, 
+  },
   {
-    "round": 1, 
-    "agent1": "concession", 
+    "round": 1,
+    "agent1": "concession",
     "agent2": "selfish"
-  }, 
+  },
   {
-    "round": 2, 
-    "agent1": "selfish", 
+    "round": 2,
+    "agent1": "selfish",
     "agent2": "concession"
-  }, 
+  },
   {
-    "round": 3, 
-    "agent1": "concession", 
+    "round": 3,
+    "agent1": "concession",
     "agent2": "selfish"
-  }, 
+  },
   {
-    "round": 4, 
-    "agent1": "selfish", 
+    "round": 4,
+    "agent1": "selfish",
     "agent2": "concession"
-  }, 
+  },
   {
-    "round": 5, 
-    "agent1": "concession", 
+    "round": 5,
+    "agent1": "concession",
     "agent2": "concession"
-  }, 
+  },
   {
-    "round": 6, 
-    "agent1": "concession", 
+    "round": 6,
+    "agent1": "concession",
     "agent2": "concession"
-  }, 
+  },
   {
-    "round": 7, 
-    "agent1": "selfish", 
+    "round": 7,
+    "agent1": "selfish",
     "agent2": "unfortunate"
-  }, 
+  },
   {
-    "round": 8, 
-    "agent1": "concession", 
+    "round": 8,
+    "agent1": "concession",
     "agent2": "fortunate"
-  }, 
-  "", 
+  },
+  "",
   ""
 ]
