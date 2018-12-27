@@ -2,7 +2,7 @@ import json
 import os
 
 # Agent-wise Frequency calculator
-probabilityDecimal = 3
+probabilityDecimal = 2
 sensory_model_file = 'sensoryModel.json'
 log_path = "./train_types/"
 
@@ -12,7 +12,6 @@ sensoryModel = {}
 
 
 for filename in os.listdir(os.getcwd() + "/train_types"):
-    print(filename)
     with open(log_path + filename) as f:
         data = json.load(f)
 
@@ -22,7 +21,6 @@ for filename in os.listdir(os.getcwd() + "/train_types"):
 
         for bidRound in data:
             if type(bidRound) is dict:
-                print(bidRound)
                 agent1_bid_type = bidRound['agent1']
                 agent2_bid_type = bidRound['agent2']
 
@@ -58,7 +56,7 @@ for filename in os.listdir(os.getcwd() + "/train_types"):
 print(agentBidFrequency)
 print(totalBidCount)
 
-print(totalBidCount.keys())
+print(agentBidFrequency.keys())
 
 
 for frequencyCounter in agentBidFrequency.keys():
@@ -71,13 +69,14 @@ for frequencyCounter in agentBidFrequency.keys():
     bid_type_prob = bid_frequency / total_agent_bid
     bid_type_prob = round(bid_type_prob, probabilityDecimal)
 
+    if agent_name not in sensoryModel:
+        sensoryModel[agent_name] = {}
+    if bid_type not in sensoryModel[agent_name]:
+        sensoryModel[agent_name][bid_type] = 0.00
 
-    sensoryModel[frequencyCounter] = bid_type_prob
+    sensoryModel[agent_name][bid_type] = bid_type_prob
 
 print(sensoryModel)
 
 with open(os.getcwd() + '/hmm_model/' + sensory_model_file, 'w') as outfile:
     json.dump(sensoryModel, outfile, indent=2)
-
-# json.dump(sensoryModel, open(sensory_model_file, 'wb'))
-# data = json.load(open(sensory_model_file))
