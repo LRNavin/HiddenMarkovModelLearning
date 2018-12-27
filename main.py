@@ -1,6 +1,7 @@
 import os
 import json
 import numpy as np
+from hmm import hmm
 
 # maps each stratey to a number so we can use int indexes instead of strings
 s = {"random": 0, "tft": 1, "hardheaded": 2, "conceder": 3}
@@ -21,6 +22,9 @@ def init_emission():
 emission_probabilities = init_emission()
 transition_probabilities = np.eye(len(s), dtype=int)
 priors = [float(1)/len(s)]*len(s)
+
+hmm = hmm(transition_probabilities, emission_probabilities, priors)
+hmm.filter()
 
 
 

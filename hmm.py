@@ -7,5 +7,8 @@ class hmm:
 		self.emissions = emission_probabilities
 		self.priors = prior_probabilities
 
-	
+	def filter(evidence):
+		print("filtering")
+
+
 
