@@ -16,15 +16,29 @@ def init_emission():
 				emission_probabilities[s[strategy]][m[move]] = emissions[strategy][move]
 		return emission_probabilities
 
+def evidence_to_index(evidence):
+	new_evidence = []
+	for i, e in enumerate(evidence):
+		e = {
+			"round": i,
+			"agent1": m[e["agent1"]],
+			"agent2": m[e["agent2"]] 
+		}
+		new_evidence.append(e)
+	return new_evidence
+
 
 # np.eye() creates diagonal matrix of ones, this represents prob 1 of transitioning to same strategy
 # and prob 0 of transitioning from one strat to another.
 emission_probabilities = init_emission()
 transition_probabilities = np.eye(len(s), dtype=int)
-priors = [float(1)/len(s)]*len(s)
-
+priors = [float(1)/len(s)]*len(s) # all startegies are equaly probable
 hmm = hmm(transition_probabilities, emission_probabilities, priors)
-hmm.filter()
+hmm.set_agent("agent1")
+with open(os.getcwd() + "/train_types/conceder_conceder.json") as f:
+	e = json.load(f)
+	evidence = evidence_to_index(e)
+	hmm.filter(evidence)
 
 
 
