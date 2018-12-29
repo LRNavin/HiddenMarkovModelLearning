@@ -1,0 +1,7 @@
+hmm_model/*
+train_types/*
+training_logs/*
+test_types/*
+test_logs/*
+venv/*
+
