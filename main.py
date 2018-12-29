@@ -35,7 +35,7 @@ def evidence_to_index(evidence):
 emission_probabilities = init_emission()
 transition_probabilities = np.eye(len(s), dtype=int)
 priors = [float(1)/len(s)]*len(s) # all startegies are equaly probable
-with open(os.getcwd() + "/train_types/conceder_random1.json") as f:
+with open(os.getcwd() + "/test_types/test3.json") as f:
 	e = json.load(f)
 	evidence = evidence_to_index(e)
 	hmm = hmm(transition_probabilities, emission_probabilities, priors, evidence)

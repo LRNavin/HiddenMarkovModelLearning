@@ -1,0 +1,207 @@
+[
+  {
+    "round": 0, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 1, 
+    "agent1": "unfortunate", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 2, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 3, 
+    "agent1": "fortunate", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 4, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 5, 
+    "agent1": "silent", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 6, 
+    "agent1": "concession", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 7, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 8, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 9, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 10, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 11, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 12, 
+    "agent1": "selfish", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 13, 
+    "agent1": "fortunate", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 14, 
+    "agent1": "concession", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 15, 
+    "agent1": "selfish", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 16, 
+    "agent1": "fortunate", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 17, 
+    "agent1": "selfish", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 18, 
+    "agent1": "fortunate", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 19, 
+    "agent1": "unfortunate", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 20, 
+    "agent1": "fortunate", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 21, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 22, 
+    "agent1": "fortunate", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 23, 
+    "agent1": "concession", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 24, 
+    "agent1": "silent", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 25, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 26, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 27, 
+    "agent1": "silent", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 28, 
+    "agent1": "selfish", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 29, 
+    "agent1": "silent", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 30, 
+    "agent1": "nice", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 31, 
+    "agent1": "selfish", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 32, 
+    "agent1": "silent", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 33, 
+    "agent1": "silent", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 34, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 35, 
+    "agent1": "concession", 
+    "agent2": "fortunate"
+  }, 
+  {
+    "round": 36, 
+    "agent1": "concession", 
+    "agent2": "unfortunate"
+  }, 
+  {
+    "round": 37, 
+    "agent1": "selfish", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 38, 
+    "agent1": "concession", 
+    "agent2": "selfish"
+  }, 
+  {
+    "round": 39, 
+    "agent1": "silent", 
+    "agent2": "concession"
+  }, 
+  {
+    "round": 40, 
+    "agent1": "silent", 
+    "agent2": "fortunate"
+  }
+]
