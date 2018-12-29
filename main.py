@@ -35,11 +35,11 @@ def evidence_to_index(evidence):
 emission_probabilities = init_emission()
 transition_probabilities = np.eye(len(s), dtype=int)
 priors = [float(1)/len(s)]*len(s) # all startegies are equaly probable
-with open(os.getcwd() + "/train_types/conceder_conceder.json") as f:
+with open(os.getcwd() + "/train_types/conceder_random1.json") as f:
 	e = json.load(f)
 	evidence = evidence_to_index(e)
 	hmm = hmm(transition_probabilities, emission_probabilities, priors, evidence)
-	hmm.set_agent("agent1")
+	hmm.set_agent("agent2")
 	strategies_prob = hmm.filter()
 	for i,strat in enumerate(strategies_prob):
 		print(strats[i] + ": " + str(round(strat, 2)) + ",\n")
