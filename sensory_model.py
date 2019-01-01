@@ -1,3 +1,4 @@
+from __future__ import division
 import json
 import os
 
@@ -10,6 +11,7 @@ agentBidFrequency = {}
 totalBidCount = {}
 sensoryModel = {}
 
+print(len(os.listdir(os.getcwd() + "/train_types")))
 
 for filename in os.listdir(os.getcwd() + "/train_types"):
     with open(log_path + filename) as f:
@@ -51,14 +53,6 @@ for filename in os.listdir(os.getcwd() + "/train_types"):
                 else:
                     totalBidCount[agent2] = 1
 
-
-
-print(agentBidFrequency)
-print(totalBidCount)
-
-print(agentBidFrequency.keys())
-
-
 for frequencyCounter in agentBidFrequency.keys():
 
     agent_name = frequencyCounter.split('_')[0]
@@ -70,10 +64,14 @@ for frequencyCounter in agentBidFrequency.keys():
     bid_type_prob = round(bid_type_prob, probabilityDecimal)
 
     if agent_name not in sensoryModel:
-        sensoryModel[agent_name] = {}
-    if bid_type not in sensoryModel[agent_name]:
-        sensoryModel[agent_name][bid_type] = 0.00
-
+        sensoryModel[agent_name] = {
+                                    "selfish": 0.00,
+                                    "silent": 0.00,
+                                    "fortunate": 0.00,
+                                    "unfortunate": 0.00,
+                                    "concession": 0.00,
+                                    "nice": 0.00
+                                  }
     sensoryModel[agent_name][bid_type] = bid_type_prob
 
 print(sensoryModel)

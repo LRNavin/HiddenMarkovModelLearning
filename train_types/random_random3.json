@@ -1,19 +1,19 @@
 [
   {
-    "round": 0,
-    "agent1": "concession",
+    "round": 0, 
+    "agent1": "concession", 
     "agent2": "concession"
-  },
+  }, 
   {
-    "round": 1,
-    "agent1": "concession",
+    "round": 1, 
+    "agent1": "concession", 
     "agent2": "concession"
-  },
+  }, 
   {
-    "round": 2,
-    "agent1": "concession",
+    "round": 2, 
+    "agent1": "concession", 
     "agent2": "fortunate"
-  },
-  "",
+  }, 
+  "", 
   ""
 ]
