@@ -1,12 +1,12 @@
-import json
+import json, collections
 import os
 from pprint import pprint
 
 def get_utility_for_bid(issues, utilities, bid):
 	bid_value = 0
 	vals = bid.split(",")
-	print(issues)
-	keys = ["Fruit", "Juice", "Topping1", "Topping2"]
+	# keys = ["Fruit", "Juice", "Topping1", "Topping2"]
+	keys = utilities.keys()
 	for i,v in enumerate(vals):
 		key = keys[i]
 		weight = utilities[key]["weight"]
@@ -30,7 +30,6 @@ def get_bid_type(prev, curr):
 		return "unknwon"
 
 def get_bid_types(bids, utilities, issues):
-	bid_types = [""]*len(bids)
 	prev1 = [0]*2
 	curr1 = [0]*2
 	prev1[0] = get_utility_for_bid(issues, utilities[0], bids[0]["agent1"])
@@ -41,6 +40,7 @@ def get_bid_types(bids, utilities, issues):
 	prev2[1] = get_utility_for_bid(issues, utilities[0], bids[0]["agent2"])
 	bids.pop(0)
 	bids.pop(len(bids)-1)
+	bid_types = [""]*len(bids)
 	for i,b in enumerate(bids):
 		curr1[0] = get_utility_for_bid(issues, utilities[0], b["agent1"]) 
 		curr1[1] = get_utility_for_bid(issues, utilities[1], b["agent1"]) 
@@ -62,9 +62,8 @@ def get_bid_types(bids, utilities, issues):
 log_path = "./training_logs/"
 
 for filename in os.listdir(os.getcwd() + "/training_logs"):
-	print(filename)
 	with open(log_path+filename) as f:
-		data = json.load(f)
+		data = json.JSONDecoder(object_pairs_hook=collections.OrderedDict).decode(f.read())
 		issues = data["issues"]
 		utilities = [0]*2
 		utilities[0] = data["Utility1"]

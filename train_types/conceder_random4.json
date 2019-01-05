@@ -13,7 +13,5 @@
     "round": 2, 
     "agent1": "silent", 
     "agent2": "selfish"
-  }, 
-  "", 
-  ""
+  }
 ]
