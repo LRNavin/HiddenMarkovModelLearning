@@ -4,7 +4,7 @@ from pprint import pprint
 
 class test_bid_type:
 
-    def get_utility_for_bid(self, isues, utilities, bid):
+    def get_utility_for_bid(self, issues, utilities, bid):
         bid_value = 0
         vals = bid.split(",")
         # keys = ["Fruit", "Juice", "Topping1", "Topping2"]
