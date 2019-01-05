@@ -2,12 +2,13 @@ import json
 import os
 from pprint import pprint
 
-def get_utility_for_bid(isues, utilities, bid):
+def get_utility_for_bid(issues, utilities, bid):
 	bid_value = 0
 	vals = bid.split(",")
+	print(issues)
 	keys = ["Fruit", "Juice", "Topping1", "Topping2"]
 	for i,v in enumerate(vals):
-		key = keys[i];
+		key = keys[i]
 		weight = utilities[key]["weight"]
 		bid_value += weight * utilities[key][v]
 	return bid_value
