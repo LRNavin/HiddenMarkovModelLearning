@@ -1,0 +1,2 @@
+echo "Testing"
+python predictStrategyHmm.py $1

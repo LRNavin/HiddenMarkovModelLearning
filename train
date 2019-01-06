@@ -1,0 +1,3 @@
+echo "Training"
+python bid_types.py
+python sensory_model.py

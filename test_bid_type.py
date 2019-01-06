@@ -1,4 +1,4 @@
-import json
+import json, collections
 import os
 from pprint import pprint
 
@@ -66,7 +66,7 @@ class test_bid_type:
 
         # script_dir = os.path.dirname(__file__)
         with open(sourceFile, 'r') as f:
-            data = json.load(f)
+            data = json.JSONDecoder(object_pairs_hook=collections.OrderedDict).decode(f.read())
             issues = data["issues"]
             utilities = [0] * 2
             utilities[0] = data["Utility1"]
