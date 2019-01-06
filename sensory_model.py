@@ -16,7 +16,6 @@ print(len(os.listdir(os.getcwd() + "/train_types")))
 for filename in os.listdir(os.getcwd() + "/train_types"):
     with open(log_path + filename) as f:
         data = json.load(f)
-
         agentNames = ''.join([i for i in filename.split('.')[0] if not i.isdigit()])
         agent1 = agentNames.split('_')[0]
         agent2 = agentNames.split('_')[1]
