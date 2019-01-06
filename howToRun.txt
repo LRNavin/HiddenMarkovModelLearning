@@ -1,0 +1,7 @@
+1) training logs must be placed inside a folder called "training_logs", there are already some logs there which can be replaced.
+
+2) test logs must be placed inside folder called test_logs, there are already logs there which can be replaced.
+
+2) run ./train
+
+3) run ./test ./test_logs/log.json
